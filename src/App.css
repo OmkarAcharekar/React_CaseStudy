@@ -3,6 +3,45 @@
   
 }
 
+#float-label {
+  display: flex;
+  flex-direction: column;
+  min-width: 335px;
+  margin-left: 25px;
+  height: 50px;
+  position: relative;
+}
+#float-label .Active {
+  transform: translate(0, 12px) scale(0.75);
+}
+#float-label input {
+  width: 100%;
+  height: 50px;
+  padding: 14px 16px 0px 10px;
+  outline: 0;
+  border: 1px solid rgb(82, 74, 74);
+  border-radius: 8px;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#float-label:focus-within label {
+  transform: translate(0, 12px) scale(0.75);
+}
+
+#float-label label {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 12px;
+  color: #999;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+  transform: translate(0, 16px) scale(1);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -51,13 +90,15 @@
  border-top: 7;
   height: 410px;
   margin-bottom: 15px;
+  background-color: #f5f9fa;
 
 }
 .setting{
  
   box-sizing: border-box;
   
-  outline: 3px solid #4a4d4b;
+ 
+  background-color: #318159;
   
   border-width: 4;
   align-items: center;
@@ -73,17 +114,25 @@
 
 .SELECT{
   margin-right: 50px;
+  margin-left: 10px;
   border-radius: 25px;
   
-  height: 45px;
+  height: 50px;
   width: 200px;
-  margin-bottom: 25px;
+  padding: 5px;
+  padding-left: 4px;
+  outline: 0;
+  border: 1px solid rgb(82, 74, 74);
+  border-radius: 8px;
+  background: #fff;
+
+  margin-bottom: 1px;
   font-Size: 23px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #494e4c;
-  outline: 2px solid #929694;
+  
 }
-#search{
+#search0{
   margin-top: 15px;
   size: 30px;
   height: 40px;
@@ -101,30 +150,33 @@ input::placeholder {
   
 }
 #submit{
-  margin-top: 15px;
+  margin-bottom: 2px;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  border: 1px solid #474948;
  
   width: 175px;
-  height: 45px;
+  height: 50px;
   
-  border : "thick solid #0000FF";
+  
   color: #f1f7f4;
-  background-color: rgb(62, 28, 117);
+  background-color: #474948;
   
   
+ 
   margin-left: 150px;
-  border-color: rgb(62, 28, 117);
+   
   border-radius: 25px;
 
 }
 .dropdown{
-  margin-left: 50px;
-  
-  height: 25%;
+  margin-left: 60px;
+ 
   display: flex;
+ 
   flex-direction: row;
   border-color: rgb(163, 167, 164);
   border-radius: 25px;
+
+  
 }

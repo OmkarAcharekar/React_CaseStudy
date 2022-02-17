@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from "react";
 import { Bubble} from 'react-chartjs-2';
 import { Chart, registerables, ArcElement } from "chart.js";
+import back from "./img/multicolor.jpg"
 Chart.register(...registerables);
 Chart.register(ArcElement);
 let g = 1;
@@ -18,7 +19,7 @@ function BarChart (props)
   console.log(props.data);
   return (
     <div>
-    <Bubble data={props.data} height={420} width={310} options={props.options}/>
+    <Bubble data={props.data} height={415} width={310} options={props.options}/>
     </div>)
 }
 
@@ -45,7 +46,7 @@ const data =
     }
     
   ],
-    backgroundColor: 'rgb(0, 152, 102)'
+    backgroundColor: 'rgb(105, 89, 175)'
   },
   {
     label: 'Coconut',
@@ -55,7 +56,7 @@ const data =
       r: 40
     }
   ],
-    backgroundColor: 'rgb(0, 153, 0)'
+    backgroundColor: 'rgb(249, 236, 61)'
   },{
     label: 'Mango',
     data: [{
@@ -90,6 +91,7 @@ const  App = () => {
   const [value, setValue] = useState("lime");
   const [inputText, setInputText] = useState("");
   const [chartData, setchartData] = useState(data);
+  const [isActive, setIsActive] = useState(false);
 
 
   const handleChange = (e) => {
@@ -184,19 +186,32 @@ const  App = () => {
     // useEffect(() => {
       
     // },[chartData]);
-  
+    function handleTextChange(text) {
+    
+      setInputText(text)
+    
+      if (text !== '') {
+        setIsActive(true);
+      } else {
+        setIsActive(false);
+      }
+    }
 
    return (
     <div className="container">
       <div className ="bubble">  
            <BarChart data={chartData} options={options}/>
       </div>
-      <div className = "setting">
-            <input type = "text" id='search' placeholder='                  NEW SUB TOPIC'  value={inputText}  onChange={(e) => setInputText(e.target.value)}/>
-
+      <div className = "setting" style={{ backgroundImage: `url(${back})` }}>
+          <div id="float-label">
+            <input type = "text" id='search'  value={inputText}  onChange={(e) => handleTextChange(e.target.value)}/>
+            <label   className={ isActive ? "Active" : ""}  htmlFor="email">
+            NEW SUB TOPIC
+          </label>
+           </div>
             <div className='dropdown'>
               <form onSubmit={handleSubmit}>
-              <label style={{fontSize:30 , fontFamily:"Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" , color:"#fcfffe"}}>
+              <label style={{fontSize:24 , fontFamily:"Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" , color:"#fcfffe"}}>
                UNDER : 
               <select value={value} onChange={handleChange} className="SELECT">
                     <option value="grapefruit">Grapefruit</option>
