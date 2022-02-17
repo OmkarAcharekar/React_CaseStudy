@@ -1,16 +1,6 @@
 .App {
   text-align: center;
-  
 }
-
-.homepage{
-  background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #float-label {
   display: flex;
   flex-direction: column;
@@ -50,83 +40,37 @@
   transform: translate(0, 16px) scale(1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .container {
-
   margin: 15px;
-
   height: 100%;
 }
 
-
-.bubble{
-  
- padding: 10px;
- border-width: 10;
-
- border-top: 7;
+.bubble {
+  padding: 10px;
+  border-width: 10;
+  border-top: 7;
   height: 410px;
   margin-bottom: 15px;
   background-color: #f5f9fa;
-
 }
-.setting{
- 
+.setting {
   box-sizing: border-box;
-  
- 
+
   background-color: #318159;
-  
+
   border-width: 4;
   align-items: center;
   height: 100px;
   margin: 0%;
   display: flex;
   flex-direction: row;
- 
-
-
 }
 
-
-.SELECT{
+.SELECT {
   margin-right: 50px;
   margin-left: 10px;
   border-radius: 25px;
-  
+
   height: 50px;
   width: 200px;
   padding: 5px;
@@ -137,56 +81,48 @@
   background: #fff;
 
   margin-bottom: 1px;
-  font-Size: 23px;
+  font-size: 23px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #494e4c;
-  
 }
-#search0{
+#search0 {
   margin-top: 15px;
   size: 30px;
   height: 40px;
   width: 25%;
   margin-left: 100px;
   outline: 2px solid #9ba19e;
-  
+
   border-radius: 25px;
 }
 
 input::placeholder {
   color: #484e4b;
-  
+
   font-size: medium;
-  
 }
-#submit{
+#submit {
   margin-bottom: 2px;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border: 1px solid #474948;
- 
+
   width: 175px;
   height: 50px;
-  
-  
+
   color: #f1f7f4;
   background-color: #474948;
-  
-  
- 
-  margin-left: 150px;
-   
-  border-radius: 25px;
 
+  margin-left: 150px;
+
+  border-radius: 25px;
 }
-.dropdown{
+.dropdown {
   margin-left: 60px;
- 
+
   display: flex;
- 
+
   flex-direction: row;
   border-color: rgb(163, 167, 164);
   border-radius: 25px;
-
-  
 }
