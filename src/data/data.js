@@ -6,7 +6,7 @@ const data = {
         {
           x: 10,
           y: 40,
-          r: 40,
+          r: 45,
         },
       ],
       backgroundColor: ' #cc3300',
@@ -19,7 +19,7 @@ const data = {
         {
           x: 23,
           y: 37,
-          r: 40,
+          r: 45,
         },
       ],
       backgroundColor: 'rgb(105, 89, 175)',
@@ -30,7 +30,7 @@ const data = {
         {
           x: 14,
           y: 34,
-          r: 40,
+          r: 45,
         },
       ],
       backgroundColor: '#00b33c',
@@ -41,7 +41,7 @@ const data = {
         {
           x: 40,
           y: 40,
-          r: 40,
+          r: 45,
         },
       ],
       backgroundColor: 'rgb(255, 128, 0)',
@@ -52,7 +52,7 @@ const data = {
         {
           x: 35,
           y: 31,
-          r: 40,
+          r: 45,
         },
       ],
 
