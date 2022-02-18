@@ -31,7 +31,7 @@ function managevalue(chartData, index, increment) {
     {
       x: chartData.datasets[index].data[0].x + increment,
       y: chartData.datasets[index].data[0].y + increment,
-      r: chartData.datasets[index].data[0].r + increment,
+      r: chartData.datasets[index].data[0].r - 10,
     },
   ];
   return new_object;
