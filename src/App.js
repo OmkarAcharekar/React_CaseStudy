@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Chart, registerables, ArcElement } from 'chart.js';
 import back from './img/multicolor.jpg';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import BarChart from './components/bubble';
+import BarChart from './components/Bubble';
 import data from './data/data';
 import options from './data/options';
 import Set from './components/set';
